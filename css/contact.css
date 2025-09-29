@@ -1,0 +1,57 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+  padding-top: 100px; /* évite que le contenu passe sous la nav */
+  width: 100%;
+  margin-top: 10vh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.conteneur-contact{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact-logo{
+  width: auto;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.contact-texte {
+      margin: auto;
+      margin-top: 0;
+    } 
+
+   .conteneur-carte-ecole {
+      margin: auto;
+      margin-top: 7.4vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 0;
+      max-width: 900px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px #E83A50;
+    }

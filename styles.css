@@ -1,0 +1,201 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
+/* =============================================================== */
+main{
+  padding-top: 100px; /* évite que le contenu passe sous la nav */
+  width: 100%;
+}
+body {
+  margin: 0;
+}
+.conteneur-titre-sur-image{
+  background-image: url(./assets/fuoco-seao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.titre-fond{
+  color: white;
+  height: 100%;
+  width: 50%;
+  display: flex;             /* active flexbox */
+  align-items: flex-start;       /* centre verticalement */
+  padding-left: 100px;
+  font-size: 2em;
+  font-size: clamp(1.5em, 2vw, 2em); /* taille fluide */
+  text-decoration: underline;
+  line-height:2.5;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ================================================= */
+
+.titre-projets-recents{
+  margin-top: 15vh;
+  color: #E83A50;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.conteneur-projets{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.projet-affiche-vaccination,.projet-interface-heidelberg,.projet-logo-maison-edition,.projet-portfolio-wordpress{
+  height: 60vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  width: 35vh;
+  border: 2px solid #F5AEB9;
+  margin-bottom: 60px;
+}
+.image-vaccination, .image-interface-heideleberg, .image-logo-edition, .image-portfolio-wordpress{
+  height:40vh;
+}
+.description-projet-vaccin, .description-projet-heidelberg,.description-projet-edition,.description-projet-portfolio-wordpress{
+  height: 20vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+
+  background-color: #F5AEB9;
+}
+.projet-affiche-vaccination:hover,.projet-interface-heidelberg:hover,.projet-logo-maison-edition:hover,.projet-portfolio-wordpress:hover{
+  transform: scale(1.1);      /* zoom léger */
+}
+
+.btn-portfolio{
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+}
+
+/* ================================================= */
+
+.description-gestion-crea{
+  background-color: #F5AEB9;
+  height:auto;
+  /* padding: 20vh; */
+  padding: clamp(10vh,2vw,20vh);
+  display: flex;
+  margin-top: 20vh;
+}
+.titre-gestion-crea{
+  width: 50%;
+  color: #E83A50;
+  text-align: right;
+  font-size: clamp(1em, 2vw, 2em); /* taille fluide */
+}
+
+.text-gestion-crea{
+  margin-top: 18vh;
+  width: 50%;
+  color: #ffffff;
+  text-align: left;
+  text-align: left;
+  
+  padding-left: 2vh;
+  font-size: clamp(0.5em, 2vw, 1.2em);
+}
+.text-gestion-crea p { 
+  opacity: 0;
+  transform: translateX(200px); /* commence à gauche */
+  transition: all 2s ease-out;
+  margin-bottom: 1.5em;
+}
+.text-gestion-crea p.show {
+  opacity: 1;
+  transform: translateX(0); /* position finale */
+}
+
+.titre-gestion-crea p {
+  opacity: 0;
+  transform: translateX(-200px); /* commence à gauche */
+  transition: all 2s ease-out;
+  margin-bottom: 1.5em;
+}
+.titre-gestion-crea p.show{
+  opacity: 1;
+  transform: translateX(0); /* position finale */
+}
+/* ================================================= */
+
+.conteneur-profil-linkedin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-profil{
+  background-image: url(./assets/photo-profil-linkedin.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25vh;
+  width: 25vh;
+}
+.texte-profil{
+  color: #E83A50;
+  line-height: 1.6;
+}
+.btn-profil-linkedin{
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+}
+.btn-profil-linkedin a{
+text-decoration: none;
+color: #E83A50;
+}
+/* ================================================= */
+footer{
+  background-color: #F5AEB9;
+  height: auto;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
+.conteneur-footer-logo{
+  height: 10vh;
+  text-align: center;
+}
+.conteneur-footer-mentions{
+  display: flex;
+  justify-content: center;
+}
+.footer-lien-contact, .footer-lien-mentions-legales{
+  color: white;
+  height: 10vh;
+  width: 20vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}

@@ -1,0 +1,17 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+  padding-top: 100px; /* évite que le contenu passe sous la nav */
+  width: 100%;
+}

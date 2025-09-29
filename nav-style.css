@@ -1,0 +1,204 @@
+/* --- Logo --- */
+.conteneur-header-logo {
+  width: auto;
+  max-width: 220px;
+}
+.conteneur-header-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Titre --- */
+.conteneur-gros-titre {
+  flex: 1; /* prend la place restante */
+  text-align: center;
+  font-size: clamp(1em, 2.5vw, 1.5em); /* taille fluide */
+  color: white;
+}
+
+/* --- Nav bar --- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #F5AEB9;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* --- Burger --- */
+.burger {
+  display: none; /* visible seulement en mobile */
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto; /* pousse le burger à droite */
+}
+
+/* --- Menu desktop --- */
+.conteneur-menu {
+  display: flex;
+  gap: 10px; /* espace entre les liens */
+  align-items: center;
+}
+
+.nav-lien, .nav-lien-btn,.nav-lien-competence {
+  padding: 15px 10px;
+  text-align: center;
+  font-size: clamp(0.5em, 1vw, 1.5em); /* taille fluide */
+}
+.nav-lien a, .nav-lien-competence a {
+  color: white;
+  text-decoration: none;
+}
+.nav-lien-btn a {
+  color: white;
+  text-decoration: none;
+}
+.nav-lien:hover, .nav-lien-competence:hover {
+  border-top: 3px solid #E83A50;
+}
+.nav-lien-competence {
+  position: relative; /* nécessaire pour le sous-menu */
+}
+
+.sous-menu{
+  display: none;
+  position: absolute;
+  top: 100%; /* Sous le lien principal */
+  left: 0;
+  background: #F5AEB9;
+  border: 3px dashed #E83A50;
+  min-width: 160px;
+  flex-direction: column;
+}
+.sous-menu a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sous-menu a:hover {
+  background: #F5AEB9;
+  border: 3px solid #E83A50;
+}
+
+/* Affiche le sous-menu au survol */
+.nav-lien-competence:hover .sous-menu {
+  display: flex;
+}
+
+/* --- Bouton contact --- */
+.btn-contact {
+  background-color: #E83A50;
+  padding: 10px 15px;
+  border: 3px solid #F5AEB9;
+  color: white;
+  border-radius: 4px;
+}
+.btn-contact:hover {
+  border-color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1000px) {
+
+  /* garde la nav en deux lignes si besoin */
+  nav {
+    flex-wrap: wrap;
+    padding: 0 20px; /* espace gauche/droite garanti */
+  }
+
+  .conteneur-gros-titre {
+    text-align: left;
+    margin-left: 10px;
+    flex: 1;
+  }
+
+  /* Burger : visible et bien positionné (méthode flex) */
+  .burger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 6px;
+    margin-left: auto;    /* pousse le burger vers la droite */
+  }
+
+  /* menu mobile : padding interne pour éviter que les éléments collent aux bords */
+  .conteneur-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 20px;    /* <-- IMPORTANT : marge interne horizontale */
+    box-sizing: border-box;
+    gap: 8px;
+    background: #F5AEB9;
+    align-items: center;
+  }
+
+  /* affichage quand .active ajouté par le JS */
+  .conteneur-menu.active {
+    display: flex;
+  }
+
+  /* chaque lien prend toute la largeur visuelle mais a du padding intérieur */
+  .nav-lien, .nav-lien-competence {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* on met les <a> en block pour tout contrôler avec padding */
+  .nav-lien a, .nav-lien-competence a {
+    display: block;
+    padding: 12px 20px;  /* padding gauche/droite qui évite le collage */
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /* le bouton Contact : ne doit pas s'étirer sur toute la largeur */
+  .btn-contact {
+    display: inline-block;    /* évite qu'il prenne 100% */
+    padding: 10px 16px;       /* padding interne */
+    margin: 6px 0;            /* espacement vertical */
+    border-radius: 4px;
+    border: 3px solid #F5AEB9;
+    background-color: #E83A50;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+}
+/* ================================================= */
+footer{
+  background-color: #F5AEB9;
+  height: auto;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
+.conteneur-footer-logo{
+  height: 10vh;
+  text-align: center;
+}
+.conteneur-footer-mentions{
+  display: flex;
+  justify-content: center;
+}
+.footer-lien-contact, .footer-lien-mentions-legales{
+  color: white;
+  height: 10vh;
+  width: 20vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}

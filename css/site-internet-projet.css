@@ -1,0 +1,100 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+padding-top: 100px; /* évite que le contenu passe sous la nav */
+margin-top: 10vh;
+width: 100%;
+padding-left: 100px;
+padding-right: 100px;
+
+}
+.sous-titre{
+    margin-top: 5vh;
+}
+
+
+/* ===================================== */
+/* button{
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+} */
+
+.btn-retour{
+  text-align: center; 
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+  margin-bottom: 5vh;
+}
+a {
+  text-decoration: none;   /* enlève le soulignement */
+  color: inherit;  
+}
+.conteneur-projet{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vh;
+    margin-bottom: 5vh;
+}
+.conteneur-projet img{
+    margin-bottom: 5vh;
+}
+.conteneur-image-metz, .conteneur-text{
+    width: 50%;
+}
+.conteneur-text{
+    color: #E83A50;
+}
+.btn-lien-site-metz{
+  text-align: center; 
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+  margin-bottom: 5vh;
+}
+.conteneur-video{
+    background-color: #E83A50;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh;
+}
+.conteneur-photo{
+    background-color: #E83A50;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh;
+}

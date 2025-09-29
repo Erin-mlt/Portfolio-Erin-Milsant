@@ -1,0 +1,55 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+padding-top: 100px; /* évite que le contenu passe sous la nav */
+margin-top: 10vh;
+width: 100%;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.conteneur-gestion-projet{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10vh;
+    margin-top: 5vh;
+    align-items: center;
+}
+.photo-gestion, .sous-titre{
+    flex: 1;
+}
+.photo-gestion-projet{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10vh;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+.photo-gestion-projet img {
+    width: 20% ; /* 4 colonnes : 25% de largeur moins l’espace */
+    height: auto;            /* garde les proportions */
+    object-fit: cover;       /* optionnel : recadre si besoin */
+    border: 3px solid #E83A50;
+    border-radius: 8px;      /* coins arrondis jolis */
+}

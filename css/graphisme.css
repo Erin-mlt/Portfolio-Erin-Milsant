@@ -1,0 +1,132 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+padding-top: 100px; /* évite que le contenu passe sous la nav */
+margin-top: 10vh;
+width: 100%;
+padding-left: 100px;
+padding-right: 100px;
+}
+.sous-titre{
+    margin-top: 5vh;
+}
+.conteneur-projets-graphisme{
+    display: grid;
+    row-gap: 5vh;
+    column-gap: 5vh;
+    width: auto;
+    padding: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.image-vaccination, .image-turbo, .image-logo-edition, .image-retouche1, .image-retouche2
+,.image-photomontage, .image-carte-ccfi,.image-cp-surf,.image-aff-metz,
+.image-affiche-noir-blanc, .image-affiche-nescafe{
+  height: 50vh;
+  border: 3px solid #F5AEB9;
+}
+.description{
+  background-color: #F5AEB9;
+  text-align: center;
+  height: 20vh;
+  align-content: center;
+  border: 3px solid #F5AEB9;
+}
+.projet-affiche-vaccination:hover,.projet-logo-turbo:hover,.projet-logo-maison-edition:hover,.projet-retouche-photo1:hover
+,.projet-retouche-photo2:hover, .projet-photomontage:hover,.projet-carte-ccfi:hover,.projet-CP-surf-vitage-party:hover
+,.projet-affiche-metz:hover,.projet-affiche-noir-blanc:hover,.projet-affiche-nescafe:hover{
+  transform: scale(1.1); /* zoom léger */  
+  cursor: pointer; 
+}
+
+/* ===================================== */
+/* button{
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+} */
+
+#detail {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #E83A50;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 100px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#detail.hidden {
+  display: none;
+}
+#close {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 1vh;
+  border: #E83A50 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  color: #E83A50;
+  font-style: italic;
+  width: 30vh;
+  cursor: pointer;
+}
+#detail .conteneur-projet{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+#detail .conteneur-texte{
+  flex: 1 1 300px;  
+}
+#detail img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#detail-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 60%; /* prend toute la largeur disponible */
+}
+#detail-images img {
+  width: 40%;        /* remplit la colonne */
+  max-width: 400px;   /* largeur max pour grand écran */
+  height: auto;       /* conserve le ratio */
+  border-radius: 10px;
+}

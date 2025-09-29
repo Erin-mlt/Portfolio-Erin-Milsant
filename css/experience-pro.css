@@ -1,0 +1,46 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+  padding-top: 100px; /* évite que le contenu passe sous la nav */
+  width: 100%;
+  margin-top: 10vh;
+}
+.premiere-experience, .deuxieme-experience, .troisieme-experience, .quatrieme-experience, .cinquieme-experience{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+.premiere-experience li, .deuxieme-experience li, .troisieme-experience li, .quatrieme-experience li, .cinquieme-experience li{
+  margin-left: 5vh;
+}
+
+.premiere-date-photo, .deuxieme-date-photo, .troisieme-date-photo, .quatrieme-date-photo, .cinquieme-date-photo{
+  width: 350px;
+}
+.premier-texte-, .deuxieme-texte-, .troisieme-texte-, .quatrieme-texte-, .cinquieme-texte-{
+  width: auto;
+  max-width: 900px;
+  margin-top: 68px;
+}

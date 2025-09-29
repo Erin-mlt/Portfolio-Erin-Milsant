@@ -1,0 +1,54 @@
+/* --- Fonts --- */
+.open-sans- {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.funnel-sans- {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
+}
+.h1{
+  font-size: 1.5em;
+  text-align: center;
+}
+.h2{
+  font-size: 1em;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+padding-top: 100px; /* évite que le contenu passe sous la nav */
+margin-top: 10vh;
+width: 100%;
+padding-left: 100px;
+padding-right: 100px;
+}
+.sous-titre{
+    margin-top: 5vh;
+}
+
+.conteneur-projets-site{
+    display: grid;
+    row-gap: 5vh;
+    column-gap: 5vh;
+    width: auto;
+    padding: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.image-site-metz, .image-portfolio, .image-heidelberg-interface, .image-web-app-millefeuille{
+  height: 50vh;
+  border: 3px solid #F5AEB9;
+}
+.description{
+  background-color: #F5AEB9;
+  text-align: center;
+  height: 20vh;
+  align-content: center;
+  border: 3px solid #F5AEB9;
+  color: white;
+}
+.projet-site-metz:hover,.projet-mon-portfolio:hover,.projet-heidelberg-interface:hover,.projet-web-app-millefeuille:hover{
+  transform: scale(1.1);      /* zoom léger */
+}
