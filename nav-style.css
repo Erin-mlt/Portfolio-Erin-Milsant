@@ -1,11 +1,14 @@
 /* --- Logo --- */
 .conteneur-header-logo {
-  width: auto;
-  max-width: 220px;
+  height: 100px;
 }
 .conteneur-header-logo img {
-  max-width: 100%;
-  height: auto;
+  height: 90%;
+}
+.conteneur-header-logo a {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 /* --- Titre --- */

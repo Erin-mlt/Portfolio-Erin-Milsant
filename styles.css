@@ -124,27 +124,6 @@ html, body {
   padding-left: 2vh;
   font-size: clamp(0.5em, 2vw, 1.2em);
 }
-.text-gestion-crea p { 
-  opacity: 0;
-  transform: translateX(200px); /* commence à gauche */
-  transition: all 2s ease-out;
-  margin-bottom: 1.5em;
-}
-.text-gestion-crea p.show {
-  opacity: 1;
-  transform: translateX(0); /* position finale */
-}
-
-.titre-gestion-crea p {
-  opacity: 0;
-  transform: translateX(-200px); /* commence à gauche */
-  transition: all 2s ease-out;
-  margin-bottom: 1.5em;
-}
-.titre-gestion-crea p.show{
-  opacity: 1;
-  transform: translateX(0); /* position finale */
-}
 /* ================================================= */
 
 .conteneur-profil-linkedin{

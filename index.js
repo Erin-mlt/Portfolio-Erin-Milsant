@@ -21,24 +21,3 @@ const burger = document.querySelector('.burger');
     menu.classList.toggle('active');
   });
 
-  
-
-document.addEventListener("DOMContentLoaded", () => {
-  // On sélectionne tous les paragraphes de plusieurs sections
-  const paragraphs = document.querySelectorAll(
-    ".text-gestion-crea p, .titre-gestion-crea p"
-  );
-
-  // Création de l'observateur
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show"); // fait apparaître le paragraphe
-        observer.unobserve(entry.target);   // stop l'observation pour éviter répétition
-      }
-    });
-  }, { threshold: 0.1 }); // déclenche quand 80% de l’élément est visible
-
-  // On observe chaque paragraphe trouvé
-  paragraphs.forEach(p => observer.observe(p));
-});
