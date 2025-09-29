@@ -10,7 +10,7 @@ projets.forEach(projet => {
   const imgs = projet.querySelectorAll("img");
   if (imgs.length === 0) return; // si aucune image, on skip
 
-  imgs[0].addEventListener("click", () => {
+  projet.addEventListener("click", () => {
     detailImagesContainer.innerHTML = ""; // vider le conteneur
 
     // ajouter toutes les images de la carte, même celles en display:none
