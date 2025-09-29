@@ -11,7 +11,6 @@
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
-
 /* =============================================================== */
 main{
   padding-top: 100px; /* évite que le contenu passe sous la nav */
@@ -37,13 +36,14 @@ html, body {
   display: flex;             /* active flexbox */
   align-items: flex-start;       /* centre verticalement */
   padding-left: 100px;
-  font-size: 2em;
-  font-size: clamp(1.5em, 2vw, 2em); /* taille fluide */
+  font-size: clamp(1rem, 5vw, 3rem); /* taille fluide et progressive */
+  transition: font-size 250ms ease;
   text-decoration: underline;
   line-height:2.5;
   flex-direction: column;
   justify-content: center;
 }
+
 
 /* ================================================= */
 
