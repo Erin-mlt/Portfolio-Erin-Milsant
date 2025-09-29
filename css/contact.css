@@ -38,12 +38,12 @@ main{
 }
 .contact-texte {
       margin: auto;
-      margin-top: 0;
+      margin-bottom: 0;
     } 
 
    .conteneur-carte-ecole {
       margin: auto;
-      margin-top: 7.4vh;
+      margin-bottom: 0;
     }
 
     iframe {
