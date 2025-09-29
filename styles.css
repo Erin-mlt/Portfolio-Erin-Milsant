@@ -20,6 +20,9 @@ main{
 body {
   margin: 0;
 }
+html, body {
+  overflow-x: hidden;
+}
 .conteneur-titre-sur-image{
   background-image: url(./assets/fuoco-seao.jpg);
   background-repeat: no-repeat;
