@@ -20,4 +20,7 @@ const burger = document.querySelector('.burger');
   burger.addEventListener('click', () => {
     menu.classList.toggle('active');
   });
-
+  
+if (window.innerWidth < 1000) {
+alert('Le site est en cours de développement de la partie responsive,\nVeuillez vous rediriger sur votre desktop pour voir le site.')
+}
