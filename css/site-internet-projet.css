@@ -69,7 +69,7 @@ a {
 .conteneur-projet img{
     margin-bottom: 5vh;
 }
-.conteneur-image-metz, .conteneur-text{
+.conteneur-image-metz,.conteneur-image-jeux, .conteneur-text{
     width: 50%;
 }
 .conteneur-text{
@@ -97,4 +97,12 @@ a {
     justify-content: center;
     text-align: center;
     padding: 5vh;
+}
+.conteneur-image-créa-voyagevibes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
