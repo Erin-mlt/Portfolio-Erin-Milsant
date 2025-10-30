@@ -75,7 +75,7 @@ a {
 .conteneur-text{
     color: #E83A50;
 }
-.btn-lien-site-metz{
+.btn-lien-site-metz, .btn-lien-site-voyagevibes{
   text-align: center; 
   padding: 1vh;
   border: #E83A50 2px solid;
